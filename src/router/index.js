@@ -5,10 +5,17 @@
  */ 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Qq from '../views/qq'
 
 Vue.use(VueRouter)
 
-  const routes = []
+const routes = [
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/login')
+  }
+]
 
 const router = new VueRouter({
   routes

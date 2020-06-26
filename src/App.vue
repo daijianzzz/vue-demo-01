@@ -6,6 +6,7 @@
 <template>
   <div id="app">
     <router-view />
+    <!-- <div class="demo">测试</div> -->
   </div>
 </template>
 
@@ -15,4 +16,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+@import "./styles/variables.scss";
+// @import "./styles/mixins.scss";
+
+.demo{
+    color: $color-primary;
+  }
+
+</style>
