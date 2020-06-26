@@ -23,6 +23,8 @@ import 'amfe-flexible' // 设置rem基准值
 //   .use(Icon)
 import './utils/register-vant' // 上面的引入封装到这个里面
 import './styles/index.scss' // 加载全局样式(注意，自己的样式文件放在其他样式文件后面，css重叠以改库样式)
+// 表单验证插件
+import '@/utils/validation'
 
 Vue.config.productionTip = false
 

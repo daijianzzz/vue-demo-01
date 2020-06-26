@@ -5,7 +5,6 @@
  */ 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Qq from '../views/qq'
 
 Vue.use(VueRouter)
 
