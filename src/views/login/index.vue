@@ -85,6 +85,7 @@
                 try {
                     let res = await login(this.user)
                     this.$store.commit('setUser', res.data.data)
+                    this.$router.push('/')
                     this.$toast.success('登录成功');  // toast成功提示
                 } catch (error) {
                     // console.log('登录失败', error);

@@ -14,6 +14,12 @@ import {
     Field,
     Toast,
     CountDown,
+    Tabbar,
+    TabbarItem,
+    Image as VanImage,
+    Grid,
+    GridItem,
+    Dialog,
   } from 'vant'
   // 注册
   Vue.use(Button)
@@ -24,3 +30,9 @@ import {
     .use(Field)
     .use(Toast)
     .use(CountDown)
+    .use(Tabbar)
+    .use(TabbarItem)
+    .use(VanImage)
+    .use(Grid)
+    .use(GridItem)
+    .use(Dialog)

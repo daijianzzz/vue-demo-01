@@ -30,3 +30,15 @@ export function sendSmsCode (mobile) {
       url: `/app/v1_0/sms/codes/${mobile}`
     })
   }
+
+
+  
+/**
+ * 获取当前登录用户自己信息
+ */
+export function getSelf () {
+  return request({
+    method: 'GET',
+    url: '/app/v1_0/user'
+  })
+}
