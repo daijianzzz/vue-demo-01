@@ -23,7 +23,22 @@ Object.keys(rules).forEach(rule => {
   });
 });
 
+// 自定义验证规则
+extend('mobilezzz', {
+  validate: value => {
+    return /^1(3|5|6|7|8|9)\d{9}$/.test(value);
+  },
+  // message: '手机号格式不正确'
+  message: '{_field_}格式不正确'
+});
 
+extend('codezzz', {
+  validate: value => {
+    return /^\d{6}$/.test(value);
+  },
+  // message: '手机号格式不正确'
+  message: '{_field_}长度6位'
+});
 
 
 
