@@ -43,7 +43,7 @@
         </ValidationObserver>
 
         <div class="btn">
-            <van-button type="info" @click="login">登录</van-button>
+            <van-button type="info" @click="login">登录</van-button><!-- {{$store.state.user}} -->
         </div>
     </div>
 </template>
@@ -84,6 +84,7 @@
                 });
                 try {
                     let res = await login(this.user)
+                    this.$store.commit('setUser', res.data.data)
                     this.$toast.success('登录成功');  // toast成功提示
                 } catch (error) {
                     // console.log('登录失败', error);
